@@ -1,0 +1,17 @@
+
+<%- include('partials/header'); -%>
+
+<h1>home</h1>
+<p><%= homeContent %> </p>
+
+<% homeArray.forEach(function(array){%>
+ <h1><%=array.title  %></h1>
+ <p><%=array.body %> </p>
+        
+                       
+<% }) %> 
+
+
+ 
+
+<%- include('partials/footer'); -%> 

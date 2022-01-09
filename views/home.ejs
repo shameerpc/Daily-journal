@@ -6,12 +6,14 @@
 
 <% homeArray.forEach(function(array){%>
  <h1><%=array.title  %></h1>
- <p><%=array.body %> </p>
-        
+  <p>
+   <%=array.body.substring(0,100)+"..."%>  
+  <a href="posts/<%= array.title %>" >Read more</a>  
+ </p>
+ 
+
                        
 <% }) %> 
 
-
- 
 
 <%- include('partials/footer'); -%> 
